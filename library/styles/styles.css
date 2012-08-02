@@ -1,0 +1,87 @@
+body {
+	font-family: Helvetica, Arial, "sans serif";
+	font-size: 12px;
+}
+video, #info, #description {
+	display: none;
+}
+#video-demo {
+	display: none;
+	position: absolute;
+	top: 150px;
+	left: 10px;
+}
+#gameCanvas {
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 10px;
+}
+#gameCanvas1 {
+	position: absolute;
+	top: 40px;
+	left: 450px;
+}
+#blendedCanvas {
+	display: none;
+	position: absolute;
+	top: 407px;
+	left: 500px;
+	width: 150px;
+	height: 113px;
+}
+#snapshot {
+	position: absolute;
+	top: 40px;
+	left: 650px;
+}
+.grayscale {
+	filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+}
+.sepia {
+	filter: sepia(1);
+	-moz-filter: sepia(1);
+	-webkit-filter: sepia(1);
+}
+.blur {
+	filter: blur(3px);
+	-moz-filter: blur(3px);
+	-webkit-filter: blur(3px);
+}
+.brightness{
+	filter: brightness(0.5);
+	-moz-filter: brightness(0.5);
+	-webkit-filter: brightness(0.5);
+}
+.contrast{
+	filter: contrast(5);
+	-moz-filter: contrast(5);
+	-webkit-filter: contrast(5);
+}
+.hue-rotate{
+	filter: hue-rotate(90deg);
+	-moz-filter: hue-rotate(90deg);
+	-webkit-filter: hue-rotate(90deg);
+}
+.hue-rotate2{
+	filter: hue-rotate(180deg);
+	-moz-filter: hue-rotate(180deg);
+	-webkit-filter: hue-rotate(180deg);
+}
+.hue-rotate3{
+	filter: hue-rotate(270deg);
+	-moz-filter: hue-rotate(270deg);
+	-webkit-filter: hue-rotate(270deg);
+}
+.saturate{
+	filter: saturate(10);
+	-moz-filter: saturate(10);
+	-webkit-filter: saturate(10);
+}
+.invert{
+	filter: invert(1);
+	-moz-filter: invert(1);
+	-webkit-filter: invert(1);
+}

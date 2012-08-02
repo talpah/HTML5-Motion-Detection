@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Motion Detection</title>
+	<link rel="stylesheet" href="library/styles/styles.css"/>
+</head>
+<body>
+
+<div id="description">This demo plays sounds, please turn the volume up. Reach the xylophone with your hands to play the notes.</div>
+<div id="message">Loading assets...</div>
+<div id="info" style="display:none">
+	<p>You are watching a video demo, follow the instructions below to enable your webcam.</p>
+	<p>Please view this page using <a href="http://tools.google.com/dlpage/chromesxs" target="_blank">Google Chrome Canary</a> and enable the "Media Stream" flag in about:flags.</p>
+	<img src="library/images/mediastream.png"/>
+</div>
+
+<!--<device type="media"></device>-->
+<video id="webcam" autoplay width="640" height="480"></video>
+
+<video id="video-demo" controls="controls" poster="library/videos/jsdetection.jpg" width="640" height="480"  onclick="if(/Android/.test(navigator.userAgent))this.play();">
+	<source src="library/videos/jsdetection.mp4" type="video/mp4" />
+	<source src="library/videos/jsdetection.ogv" type="video/ogg" />
+	<source src="library/videos/jsdetection.webm" type="video/webm" />
+	Your browser doesn't support the html 5 video tag.
+</video>
+
+<canvas id="canvas-source" width="640" height="480"></canvas>
+<canvas id="canvas-blended" width="640" height="480"></canvas>
+<canvas id="snapshot" width="640" height="480"></canvas>
+
+<div id="xylo">
+	<div id="back"><img id="xyloback" src="library/images/xylo.png"/></div>
+	<div id="front">
+		<img id="note0" src="library/images/note1.png"/>
+		<img id="note1" src="library/images/note2.png"/>
+		<img id="note2" src="library/images/note3.png"/>
+		<img id="note3" src="library/images/note4.png"/>
+		<img id="note4" src="library/images/note5.png"/>
+		<img id="note5" src="library/images/note6.png"/>
+		<img id="note6" src="library/images/note7.png"/>
+		<img id="note7" src="library/images/note8.png"/>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="library/scripts/libs/buffer-loader.js"></script>
+
+<script src="library/scripts/app.js"></script>
+
+<script src="library/scripts/libs/jquery.hotkeys.js"></script>
+<script src="library/scripts/key_status.js"></script>
+<script src="library/scripts/util.js"></script>
+<script src="library/scripts/sound.js"></script>
+<script src="library/scripts/sprite.js"></script>
+</body>
+</html>

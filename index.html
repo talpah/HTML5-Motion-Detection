@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Motion Detection</title>
+		
+		<!-- styles -->
+		<link rel="stylesheet" href="library/styles/styles.css"/>
+	</head>
+	<body>
+		<!-- description -->
+		<div id="description">This game allows you to wave your hands over an enemy to kill them.</div>
+		<div id="message">Loading assets...</div>
+		<div id="info" style="display:none">
+			<p>You do not have the relevant capabilities enbabled in your brower.  Please do the below if in Chrome, else find a work around for your desired browser</p>
+			<img src="library/images/mediastream.png"/>
+		</div>
+		<!-- end description -->
+		
+		<!-- video element -->
+		<video id="webcam" autoplay width="640" height="480"></video>
+		<!-- end video element -->
+			
+		<!-- demo video -->
+		<video id="video-demo" controls="controls" poster="library/videos/jsdetection.jpg" width="640" height="480"  onclick="if(/Android/.test(navigator.userAgent))this.play();">
+			<source src="library/videos/jsdetection.mp4" type="video/mp4" />
+			<source src="library/videos/jsdetection.ogv" type="video/ogg" />
+			<source src="library/videos/jsdetection.webm" type="video/webm" />
+			Your browser doesn't support the html 5 video tag.
+		</video>
+		<!-- end demo video -->
+		
+		<!-- includes -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="library/scripts/app.js"></script>
+		
+		<script src="library/scripts/sound.js"></script>
+		<script src="library/scripts/sprite.js"></script>
+		<!-- end includes -->
+	</body>
+</html>
